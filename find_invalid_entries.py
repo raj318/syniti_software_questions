@@ -23,7 +23,6 @@ def main():
     invalids = []
     cache = {}
     for item in data:
-        print(item)
         hshlib = hashlib.md5()
         hshlib.update(str(item).encode('utf8'))
         hash_id = hshlib.hexdigest()
@@ -34,7 +33,6 @@ def main():
         s = 0
         for ele in items:
             if not(ele in item and item[ele]):
-                print(f'{ele} is not valid for {item["id"]}')
                 invalids.append(item['id'])
                 s = 1
                 break
@@ -43,8 +41,9 @@ def main():
         if not('zip' in item and item['zip'] and len(item['zip']) == 5 \
                 and item['zip'].isdecimal() and item['zip'] != '00000'):
             invalids.append(item['id'])
-    for item in invalids:
-        print(item)
+    return invalids
 
 if __name__ == "__main__":
-    main()
+    invalids = main()
+    for item in invalids:
+        print(item)
