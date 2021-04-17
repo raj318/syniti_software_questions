@@ -11,4 +11,4 @@
   * I started "Head first Design patterns", this changed my approach on design patterns, it prepared on how to learn and remember and takes you slowly on topics with simple examples.
 
 * Tell us about one of your favorite products (physical or software) and one specific aspect that makes it truly great.
-  * I do find AI very intresting.
+  * I do find AI very intresting, its use cases are only limited to our imagination.
